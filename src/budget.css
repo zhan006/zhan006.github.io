@@ -1,0 +1,39 @@
+body{
+    box-sizing: border-box;
+}
+header{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+#participant-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin:auto;
+    border:solid 1px;
+    /* align-items: center; */
+    
+}
+#add{
+    box-sizing: border-box;
+    width:10rem;
+    height:10rem;
+    padding:0.5rem 0rem;
+    text-align: center;
+    color:blue;
+    cursor:pointer;
+    border: solid blue 2px;
+}
+.info{
+    margin:5px;
+    
+}
+input{
+    float: right;
+}
+.participant{
+    flex:0 0 10rem;
+    border:solid 0.5px gray;
+    margin:15px 10px;
+}

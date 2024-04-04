@@ -1,0 +1,52 @@
+.flappy-game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: white;
+  .prompt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff;
+  }
+  .bird {
+    position: absolute;
+    left: 7vw;
+    transform: translate(0, -50%);
+    background-color: yellow;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    img {
+      transform: translate(-13%, -16%);
+      width: 68px;
+      height: 80px;
+    }
+  }
+  .pipe {
+    position: absolute;
+    $width: 70px;
+    width: $width;
+    height: 100%;
+    transform: translate(-100%, 0);
+    .pipe-top {
+      position: absolute;
+      background-color: green;
+      width: $width;
+      height: 100%;
+    }
+    .pipe-bottom {
+      position: absolute;
+      width: $width;
+      background-color: green;
+      height: 100%;
+    }
+  }
+}
